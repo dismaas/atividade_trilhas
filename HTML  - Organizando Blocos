@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+
+  <head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Exercício Flexbox</title>
+
+    <link rel="stylesheet" href="Atividade-Final.css">
+
+  </head>
+
+  <body>
+
+    <main>
+
+      <h1>Exercício Flexbox</h1>
+
+      <section class="examples" aria-label="Exemplos de alinhamento com Flexbox">
+
+        <div class="card">
+
+          <span class="item item-1"></span>
+
+          <span class="item item-2"></span>
+
+          <span class="item item-3"></span>
+
+          <span class="item item-4"></span>
+
+        </div>
+
+        <div class="card column-center">
+
+          <span class="item item-1"></span>
+
+          <span class="item item-2"></span>
+
+          <span class="item item-3"></span>
+
+          <span class="item item-4"></span>
+
+        </div>
+
+        <div class="card column-cross-center">
+
+          <span class="item item-1"></span>
+
+          <span class="item item-2"></span>
+
+          <span class="item item-3"></span>
+
+          <span class="item item-4"></span>
+
+        </div>
+
+        <div class="card row-cross-center">
+
+          <span class="item item-1"></span>
+
+          <span class="item item-2"></span>
+
+          <span class="item item-3"></span>
+
+          <span class="item item-4"></span>
+
+        </div>
+
+        <div class="card bottom-end">
+
+          <span class="item item-1"></span>
+
+          <span class="item item-2"></span>
+
+          <span class="item item-3"></span>
+
+          <span class="item item-4"></span>
+
+        </div>
+
+        <div class="card row-cross-center">
+
+          <span class="item item-1"></span>
+
+          <span class="item item-2"></span>
+
+          <span class="item item-3"></span>
+
+          <span class="item item-4"></span>
+
+        </div>
+
+        <div class="card row-center">
+
+          <span class="item item-1"></span>
+
+          <span class="item item-2"></span>
+
+          <span class="item item-3"></span>
+
+          <span class="item item-4"></span>
+
+        </div>
+
+        <div class="card wrapped">
+
+          <span class="item item-1"></span>
+
+          <span class="item item-2"></span>
+
+          <span class="item item-3"></span>
+
+          <span class="item item-4"></span>
+
+        </div>
+
+      </section>
+
+    </main>
+
+  </body>
+
+</html>
+
