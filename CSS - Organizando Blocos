@@ -1,0 +1,122 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 32px 16px;
+  background: #f4f7f8;
+  color: #17364b;
+  font-family: Arial, sans-serif;
+}
+
+main {
+  width: 100%;
+}
+
+h1 {
+  margin: 0 0 20px;
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+.examples {
+  width: max-content;
+  max-width: 100%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(4, 90px);
+  gap: 2px;
+  padding: 2px;
+  background: #087b78;
+}
+
+.card {
+  width: 90px;
+  height: 90px;
+  display: flex;
+  gap: 3px;
+  overflow: hidden;
+  background: #102f46;
+  border: 1px solid #16425b;
+}
+
+.item {
+  flex: 0 0 14px;
+  width: 14px;
+  height: 14px;
+  border-radius: 3px;
+}
+
+.item-1 {
+  background: #83caff;
+}
+
+.item-2 {
+  background: #5aafea;
+}
+
+.item-3 {
+  background: #3988cf;
+}
+
+.item-4 {
+  background: #2365a4;
+}
+
+/* 1º Card: Padrão (Flex Row, topo/esquerda) */
+
+/* 2º Card: Coluna no centro vertical (Card 2 no PDF) */
+.column-center {
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* 3º Card: Coluna centralizada horizontalmente (Card 3 no PDF) */
+.column-cross-center {
+  flex-direction: column;
+  align-items: center;
+}
+
+/* 4º Card: Linha centralizada verticalmente (Card 4 no PDF) */
+.row-cross-center {
+  align-items: center;
+}
+
+/* 5º Card: Linha na parte inferior (Card 5 no PDF) */
+.bottom-end {
+  align-items: flex-end;
+}
+
+/* 6º Card: Destaque do item 3 branco (Card 6 no PDF) */
+.card:nth-child(6) .item-3 {
+  background: #ffffff;
+}
+
+/* 7º Card: Centralizado nos dois eixos (Card 7 no PDF) */
+.row-center {
+  justify-content: center;
+  align-items: center;
+}
+
+/* 8º Card: Quebra de linha e tamanho maior dos itens (Card 8 no PDF) */
+.wrapped {
+  flex-wrap: wrap;
+  align-content: flex-start;
+}
+
+.wrapped .item {
+  flex-basis: 28px;
+  width: 28px;
+  height: 28px;
+}
+
+@media (max-width: 390px) {
+  .examples {
+    grid-template-columns: repeat(2, 90px);
+  }
+}
